@@ -1,0 +1,125 @@
+:root {
+  --color-bg: #faf6f0;
+  --color-surface: #ffffff;
+  --color-text: #3a332c;
+  --color-text-muted: #6b6258;
+  --color-primary: #a05c3b;
+  --color-primary-dark: #7c4429;
+  --color-accent: #d8c9a3;
+  --color-border: #e6dccb;
+  --max-width: 760px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.5rem;
+}
+
+header p {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+nav {
+  background: var(--color-primary-dark);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.75rem 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+h2 {
+  color: var(--color-primary-dark);
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.4rem;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.at-a-glance {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.at-a-glance div {
+  text-align: center;
+}
+
+.at-a-glance dt {
+  font-weight: bold;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.25rem;
+}
+
+.at-a-glance dd {
+  margin: 0;
+}
+
+.placeholder-image {
+  background: var(--color-accent);
+  color: var(--color-text-muted);
+  border: 1px dashed var(--color-primary-dark);
+  border-radius: 8px;
+  padding: 3rem 1rem;
+  text-align: center;
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+
+.contact-block p {
+  margin: 0.3rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--color-border);
+}
